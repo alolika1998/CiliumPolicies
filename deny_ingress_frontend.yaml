@@ -10,3 +10,7 @@ spec:
       app: frontend-external
     ingress:
     - {}
+     toPorts:
+    - ports:
+      - port: "80:31039"
+        protocol: TCP
