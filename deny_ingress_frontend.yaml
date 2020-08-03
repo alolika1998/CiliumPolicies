@@ -9,7 +9,9 @@ spec:
       app: frontend
       app: frontend-external
     ingress:
-    - {}
+      - fromEndpoints:
+    - matchLabels:
+        app: frontend
      toPorts:
     - ports:
       - port: "80:31039"
